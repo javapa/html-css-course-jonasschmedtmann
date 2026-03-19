@@ -1,0 +1,123 @@
+* {
+  color: #444;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(3, 135, 175);
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/*Descendant selector, selects ALL the p elements inside the footer */
+/* footer p {
+  font-size: 16px;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.related {
+  list-style: none;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  /* color: #1098ad; */
+}
+
+/* Style all the paragraps that are the first child of an article*/
+article p:first-child {
+  font-weight: bold;
+}
+
+aside {
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  background-color: #f7f7f7;
+}
+
+/* Styling links, remember that
+the order in which you define the anchor tags
+with psuedo classes matters. 
+link - visited - hover - active (LVHA)*/
+
+/* This will style all the anchor tags 
+that hava a href attribute */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* In practice this never gets done, the links that were 
+visited have the same color as the link psuedo class*/
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: #0a5561;
+  text-decoration: underline wavy #0a5561;
+  font-weight: bold;
+}
+
+a:active {
+  background-color: #ecccc8;
+  font-style: italic;
+}
