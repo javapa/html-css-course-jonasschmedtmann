@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.product {
+  border: 4px solid #000;
+  width: 825px;
+  margin: 40px auto;
+}
+
+h3,
+.product-title,
+.item-price,
+.free-shipping,
+.add-cart {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-title,
+.item-price,
+.add-cart {
+  font-size: 20px;
+}
+
+.product-title {
+  padding: 20px;
+}
+
+.product-title {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.free-shipping {
+  margin-bottom: 20px;
+}
+
+.details-title {
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.details-list {
+  list-style: square;
+  margin: 0 0 20px 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+/* Claasses */
+
+.free-shipping {
+  color: lightslategray;
+  font-size: 12px;
+}
+
+.add-cart {
+  background-color: black;
+  color: white;
+  font-weight: normal;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 4px solid black;
+}
+
+.add-cart:hover {
+  background-color: #fffefe;
+  color: black;
+  cursor: pointer;
+}

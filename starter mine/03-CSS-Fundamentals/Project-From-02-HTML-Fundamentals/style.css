@@ -1,6 +1,45 @@
 * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   color: #444;
   font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+nav {
+  text-align: center;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  width: 500px;
+}
+
+.post-header {
+  margin-bottom: 40px;
 }
 
 h1,
@@ -15,12 +54,34 @@ h1 {
   font-style: italic;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  background-color: #ffe70e;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -32,10 +93,27 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+h3 + p::first-line {
+  /* font-weight: bold; */
+}
+
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /*Descendant selector, selects ALL the p elements inside the footer */
@@ -62,10 +140,6 @@ li {
   font-weight: bold;
 }
 
-.main-header {
-  background-color: #f7f7f7;
-}
-
 /* .first-li {
   font-weight: bold;
 } */
@@ -85,12 +159,6 @@ li:nth-child(even) {
 /* Style all the paragraps that are the first child of an article*/
 article p:first-child {
   font-weight: bold;
-}
-
-aside {
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  background-color: #f7f7f7;
 }
 
 /* Styling links, remember that
@@ -120,4 +188,34 @@ a:hover {
 a:active {
   background-color: #ecccc8;
   font-style: italic;
+}
+
+.post-image {
+  width: 100%;
+}
+
+nav a:link {
+  /* background-color: orange;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  background-color: #1098ad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
