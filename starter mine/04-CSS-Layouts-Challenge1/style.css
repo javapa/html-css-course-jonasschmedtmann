@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.product {
+  border: 4px solid #000;
+  width: 825px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.product-sale {
+  position: absolute;
+  top: -15px;
+  left: -36px;
+  background-color: #ec2f2f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+h3,
+.product-title,
+.item-price,
+.free-shipping,
+.add-cart {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-title,
+.item-price,
+.add-cart {
+  font-size: 20px;
+}
+
+.product-title {
+  padding: 20px;
+}
+
+.product-title {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.item-price {
+  float: left;
+}
+
+.free-shipping {
+  margin-bottom: 20px;
+  float: right;
+}
+
+.details-title {
+  margin-bottom: 15px;
+  /* margin-top: 30px; */
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.colored-squares-list {
+  list-style: none;
+}
+
+.colored-squares-list li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  margin-right: 10px;
+}
+
+.colored-squares-list li:nth-child(2) {
+  background-color: #2f6ee2;
+}
+
+.colored-squares-list li:nth-child(3) {
+  background-color: #ec2f2f;
+}
+
+.colored-squares-list li:nth-child(4) {
+  background-color: #f0bf1e;
+}
+
+.colored-squares-list li:nth-child(5) {
+  background-color: #90cc20;
+}
+
+.colored-squares-list li:last-child {
+  background-color: #885214;
+}
+
+.details-list {
+  list-style: square;
+  margin: 0 0 20px 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+/* Claasses */
+
+.free-shipping {
+  color: lightslategray;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.add-cart {
+  background-color: black;
+  color: white;
+  font-weight: normal;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 4px solid black;
+}
+
+.add-cart:hover {
+  background-color: #fffefe;
+  color: black;
+  cursor: pointer;
+}
+
+.product-image {
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin-right: 40px;
+}
+
+.product-info {
+  float: left;
+  width: 243.5px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.product-details {
+  float: left;
+  margin-top: 20px;
+  width: 243.5px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.item-description {
+  margin-bottom: 10px;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -38,8 +38,29 @@
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
-
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+
+      .el--1 {
+        align-self: auto;
+        order: 1;
+      }
+
+      .el--3 {
+        align-self: flex-end;
+        order: -1;
+      }
+
+      .el {
+        /* margin-right: 10px; */
+        /* flex-basis: 100px; */
+        flex-shrink: 0;
+        /* flex-grow: 1; */
+        flex: 1 0 auto;
       }
     </style>
   </head>

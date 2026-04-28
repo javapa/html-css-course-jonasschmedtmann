@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+nav {
+  /* text-align: center; */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  /* margin-bottom: 60px; */
+  /* height: 80px; */
+}
+
+article {
+  /* margin-bottom: 60px; */
+}
+
+aside {
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(3, 135, 175);
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  background-color: #ffe70e;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+h3 + p::first-line {
+  /* font-weight: bold; */
+}
+
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+/*Descendant selector, selects ALL the p elements inside the footer */
+/* footer p {
+  font-size: 16px;
+} */
+
+.author {
+  font-style: italic;
+  font-size: 18px;
+  margin: 0;
+  margin-left: 15px;
+}
+
+#copyright {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.related {
+  list-style: none;
+  margin-left: 0;
+}
+
+.related-author {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+li:nth-child(even) {
+  /* color: #1098ad; */
+}
+
+/* Style all the paragraps that are the first child of an article*/
+article p:first-child {
+  font-weight: bold;
+}
+
+/* Styling links, remember that
+the order in which you define the anchor tags
+with psuedo classes matters. 
+link - visited - hover - active (LVHA)*/
+
+/* This will style all the anchor tags 
+that hava a href attribute */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* In practice this never gets done, the links that were 
+visited have the same color as the link psuedo class*/
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: #0a5561;
+  text-decoration: underline wavy #0a5561;
+  font-weight: bold;
+}
+
+a:active {
+  background-color: #ecccc8;
+  font-style: italic;
+}
+
+.post-image {
+  width: 100%;
+}
+
+nav a:link {
+  /* background-color: orange;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  background-color: #1098ad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* .author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin-left: 20px;
+  margin-top: 10px;
+  float: left;
+} */
+
+/* h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix {
+  display: flow-root;
+} */
+/* .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+/* article {
+  float: left;
+  width: 825px;
+}
+
+aside {
+  float: right;
+  width: 300px;
+  padding: 50px 40px;
+}
+
+footer {
+  clear: both;
+} */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* .row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+article {
+  flex: 0 0 825px;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / 3;
+}
+
+article {
+}
+
+aside {
+  /* align-self: start; */
+}
+
+footer {
+  grid-column: 1 / 3;
+}
