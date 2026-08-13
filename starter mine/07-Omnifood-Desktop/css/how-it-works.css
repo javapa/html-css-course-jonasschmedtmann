@@ -1,0 +1,60 @@
+/**************************************/
+/* HOW IT WORKS SECTION */
+/**************************************/
+.section-how {
+  padding: 3.2rem;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  /* "hack" to give the element a height with percentages because
+  when using percentages to set the height the height stays zero. So we
+  leave the height at zero but give the element the amount of padding at the bottom
+  to recreate the heigt */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  background-color: #fdf2e9;
+  z-index: -1;
+  padding-bottom: 60%;
+}
+
+.step-img-box::after {
+  width: 50%;
+  background-color: #fae5d3;
+  padding-bottom: 50%;
+  z-index: 0;
+}
+
+.step-img {
+  width: 35%;
+  z-index: 1;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
