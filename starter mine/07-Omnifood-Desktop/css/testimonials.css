@@ -20,6 +20,10 @@
   row-gap: 4.8rem;
 }
 
+.gallery-item {
+  overflow: hidden;
+}
+
 .testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
@@ -34,7 +38,7 @@
 
 .testimonial-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f;
 }
 
 .gallery {
@@ -47,4 +51,9 @@
 .gallery-item img {
   display: block;
   width: 100%;
+  transition: all 0.4s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
