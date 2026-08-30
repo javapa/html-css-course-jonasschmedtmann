@@ -35,14 +35,20 @@
 - Tints:
   - #fdf2e9
   - #fae5d3
-- Shades: #cf711f
+  - #eb984e
+- Shades:
+  - #cf711f
+  - #45260a
 - Greys:
   - #555
   - #333
   - #888
   - #6f6f6f
+  - #aaa
 
 ## 05 SHADOWS
+
+- 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 ## 06 BORDER-RADIUS
 

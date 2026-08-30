@@ -1,6 +1,10 @@
 /**************************************/
 /* GENERAL REUSABLE COMPONENTS */
 /**************************************/
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem hsla(28, 80%, 52%, 0.51);
+}
 
 .container {
   /* 1140px is also a convention */
@@ -13,6 +17,10 @@
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -67,6 +75,7 @@
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -74,10 +83,11 @@
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
-  transition:
-    background-color 0.3s,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -106,6 +116,18 @@
 
   /* Trick to add a border on the inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .margin-right-sm {
